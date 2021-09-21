@@ -1,23 +1,64 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
+//components
+import Sidebar from "./components/sidebar-nav/index";
+import HomePage from "./components/homepage";
+import About from "./components/about";
+import Contact from "./components/contact";
+import Portfolio from "./components/portfolio";
+
+// routes
+import Swif2Route from "./routes/swif2";
+
+const routes = [
+  {
+    exactPath: "/",
+    component: HomePage,
+  },
+  {
+    path: "/about/",
+    component: About,
+  },
+  {
+    path: "/contact/",
+    component: Contact,
+  },
+  {
+    path: "/portfolio",
+    component: Portfolio,
+    routes: [
+      {
+        path: "/portfolio/swif2/",
+        component: Swif2Route,
+      },
+    ],
+  },
+];
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Router>
+        <Sidebar />
+        <Switch>
+          <Route exact path="/">
+            <HomePage />
+          </Route>
+          <Route path="/about/">
+            <About />
+          </Route>
+          <Route path="/contact/">
+            <Contact />
+          </Route>
+          <Route exact path="/portfolio/">
+            <Portfolio />
+          </Route>
+          <Route exact path="/portfolio/swif2ip">
+            <Swif2Route />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }

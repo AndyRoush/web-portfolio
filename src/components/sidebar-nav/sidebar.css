@@ -1,0 +1,87 @@
+.sidebar-wrapper {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    z-index: 2;
+    width: 25%;
+    font-size: 14px;
+    color: #fff;
+    text-align: left;
+    background-color: #222831;
+}
+
+.sidebar-inner {}
+
+.avatar-wrapper {
+    padding: 45px
+}
+
+.avatar-wrapper h1 {
+    margin-bottom: 0;
+}
+
+.avatar-wrapper h2 {
+    margin-top: 10px;
+    font-size: 12pt;
+}
+
+.avatar-img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border: 5px solid #00ADB5
+}
+
+.avatar-link {
+    text-decoration: none;
+}
+
+.navbar-desktop-ul {
+    color: #EEEEEE;
+    text-transform: uppercase;
+}
+
+.bg-blue {
+    position: relative;
+    padding: 10px 45px;
+    font-size: 16pt;
+    margin: 5px 0;
+}
+
+.bg-blue-full {
+    position: relative;
+    padding: 10px 45px;
+    font-size: 16pt;
+    margin: 5px 0;
+}
+
+.bg-blue-full:before {
+    content: '';
+    background: #393E46;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transition: 0.2s ease-out;
+    z-index: -1;
+    border-bottom: 2px solid #00ADB5;
+}
+
+.bg-blue:before {
+    content: '';
+    background: #393E46;
+    position: absolute;
+    width: 0%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transition: 0.2s ease-out;
+    z-index: -1;
+    border-bottom: 2px solid #00ADB5;
+}
+
+.bg-blue:hover:before {
+    width: 100%;
+}
