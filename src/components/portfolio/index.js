@@ -8,6 +8,7 @@ import "./portfolio.css";
 import swif2IP from "../../assets/images/portfolio/ip-swif2/login-1.PNG";
 import swif2DV from "../../assets/images/portfolio/dv-swif2/login.PNG";
 import scdistributorsImg from "../../assets/images/portfolio/scdistributors/hero.PNG";
+import investorPortalsImg from "../../assets/images/portfolio/ip-sdcf/login.PNG";
 
 const Portfolio = () => {
   return (
@@ -29,11 +30,13 @@ const Portfolio = () => {
             </p>
             <p>
               Customer-facing portal detailing the SWIF2 fund for investors.
+              Version two of company investor portals utilizing hooks
             </p>
             <ul className="styled-ul">
               <li>Fully responsive</li>
               <li>React front end, SQL backend</li>
               <li>Styled using custom styling and material-ui</li>
+              <li>New and updated version of investor portals</li>
             </ul>
             <Link to="/portfolio/swif2ip" className="link-button">
               More details
@@ -167,10 +170,10 @@ const Portfolio = () => {
           </div>
         </div>
         {/* SWIF2 IP end */}
-        {/* SWIF2 DV start */}
+        {/* datavaults start */}
         <div className="port-section-wrapper">
           <div>
-            <h2 className="port-work-header">SWIF 2 Data Vault</h2>
+            <h2 className="port-work-header">Data Vaults</h2>
             <p>
               Investing in essential digital infrastructure assets that keep us
               connected.
@@ -182,7 +185,7 @@ const Portfolio = () => {
               <li>Redux for state management.</li>
               <li>Styled using custom styling and bootstrap</li>
             </ul>
-            <Link to="/portfolio/swif2dv" className="link-button">
+            <Link to="/portfolio/datavaults" className="link-button">
               More details
             </Link>
             <h5>Technology used</h5>
@@ -313,7 +316,7 @@ const Portfolio = () => {
             <img src={swif2DV} alt="" className="port-img" />
           </div>
         </div>
-        {/* SWIF2 DV end */}
+        {/* datavaulrs end */}
         {/* scdistributors start */}
         <div className="port-section-wrapper">
           <div>
@@ -454,6 +457,134 @@ const Portfolio = () => {
           </div>
         </div>
         {/* scdistributors end */}
+        {/* investor portals start */}
+        <div className="port-section-wrapper">
+          <div>
+            <h2 className="port-work-header">Investor Portals</h2>
+            <p>
+              A private investment offering for accredited investors only.
+            </p>
+            <p>
+              A place for investors to explore to learn all about the funds they are interested in.
+            </p>
+            <ul className="styled-ul">
+              <li>Fully responsive</li>
+              <li>React front end with a SQL backend</li>
+              <li>Login and auth implementation</li>
+              <li>Redux for state management.</li>
+            </ul>
+            <Link to="/portfolio/investorportals" className="link-button">
+              More details
+            </Link>
+            <h5>Technology used</h5>
+            <ul className="tech-tags-wrapper">
+              <li className="tech-tags-li">
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="tech-link-button"
+                >
+                  HTML
+                </a>
+              </li>
+              <li className="tech-tags-li">
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="tech-link-button"
+                >
+                  CSS
+                </a>
+              </li>
+              <li className="tech-tags-li">
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/javascript"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="tech-link-button"
+                >
+                  Javascript
+                </a>
+              </li>
+              <li className="tech-tags-li">
+                <a
+                  href="https://reactjs.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="tech-link-button"
+                >
+                  React
+                </a>
+              </li>
+                  <li className="tech-tags-li">
+                <a
+                  href="https://react-redux.js.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="tech-link-button"
+                >
+                  React Redux
+                </a>
+              </li>
+              <li className="tech-tags-li">
+                <a
+                  href="https://redux.js.org/usage/writing-logic-thunks"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="tech-link-button"
+                >
+                  Redux Thunk
+                </a>
+              </li>
+              <li className="tech-tags-li">
+                <a
+                  href="https://www.npmjs.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="tech-link-button"
+                >
+                  npm
+                </a>
+              </li>
+              <li className="tech-tags-li">
+                <a
+                  href="https://react-bootstrap-v4.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="tech-link-button"
+                >
+                  react-bootstrap
+                </a>
+              </li>
+              <li className="tech-tags-li">
+                <a
+                  href="https://reactrouter.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="tech-link-button"
+                >
+                  react-router
+                </a>
+              </li>
+              <li className="tech-tags-li">
+                <a
+                  href="https://fontawesome.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="tech-link-button"
+                >
+                  font awesome
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div className="port-img-container">
+            <img src={investorPortalsImg} alt="" className="port-img" />
+          </div>
+        </div>
+        {/* investor portals end */}
       </div>
     </>
   );
