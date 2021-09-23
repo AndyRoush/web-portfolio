@@ -1,4 +1,8 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 // css
 import "./contact.css";
@@ -15,9 +19,24 @@ const Contact = () => {
           <p>Github:</p>
         </div>
         <div className="contact-right">
-          <p>Andy roush</p>
-          <p>Andy roush</p>
-          <p>Andy roush</p>
+          <a href="mailto:andyroush17@gmail.com">
+            <FontAwesomeIcon icon={faEnvelope} /> &nbsp; Andyroush17@gmail.com
+          </a>
+          <a
+            href="https://www.linkedin.com/in/andyroush/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faLinkedin} /> &nbsp; Andy Roush
+          </a>
+          <a
+            href="https://github.com/AndyRoush"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faGithub} />
+            &nbsp; Andy Roush
+          </a>
         </div>
       </div>
     </div>

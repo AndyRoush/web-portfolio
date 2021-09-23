@@ -2,3 +2,12 @@
     display: grid;
     grid-template-columns: 150px 1fr;
 }
+
+.contact-right a {
+    display: block;
+    margin: 16px 0;
+}
+
+.contact-right a:hover {
+    text-decoration: underline;
+}

@@ -85,3 +85,17 @@
 .bg-blue:hover:before {
     width: 100%;
 }
+
+.social-links {
+    margin-top: 40px;
+    padding: 0 45px;
+}
+
+.social-links h3 {
+    color: rgb(158, 158, 158);
+    margin-bottom: 8px;
+}
+
+.social-icon {
+    margin-right: 12px;
+}
